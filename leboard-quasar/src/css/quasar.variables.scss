@@ -12,6 +12,9 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alice&family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade");
+
 $primary: #9773ff;
 $secondary: #26a69a;
 $accent: #9c27b0;
@@ -24,13 +27,35 @@ $negative: #c10015;
 $info: #31ccec;
 $warning: #f2c037;
 
-@import url("https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade");
 $sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif;
+
+$Alice: "Alice", serif;
+.alice {
+  font-family: $Alice;
+  font-weight: 400;
+  font-style: normal;
+}
 
 $BungeeShade: "Bungee Shade", $sans-serif;
 .bungee-shade {
   font-family: $BungeeShade;
   font-size: 30px;
   color: $primary;
+}
+
+$AlfaOneSlab: "Alfa One Slab", serif;
+.alfa-slab-one-overline {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+$Itim: "Itim", cursive;
+.itim {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
 }
