@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHr lpR fFf">
+  <q-layout view="LHr lpR fFf">
     <q-header bordered class="bg-white text-black">
       <q-toolbar>
         <q-toolbar-title class="text-weight-bold text-center">
@@ -28,9 +28,7 @@
       :width="283"
     >
       <!-- <q-icon name="font_download" /> -->
-      <q-title class="bungee-shade q-pl-md q-pb-lg q-pt-lg q-mr-md"
-        >LeBoard</q-title
-      >
+      <q-title class="bungee-shade q-pa-lg q-my-xl">LeBoard</q-title>
 
       <q-list class="alice q-mt-lg">
         <q-item to="/" clickable v-ripple exact>
@@ -135,7 +133,7 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container class="q-mt-xl">
+    <q-page-container class="">
       <router-view />
     </q-page-container>
   </q-layout>
