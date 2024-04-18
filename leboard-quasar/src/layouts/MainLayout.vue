@@ -1,25 +1,5 @@
 <template>
-  <q-layout view="LHr lpR fFf">
-    <q-header bordered class="bg-white text-black">
-      <q-toolbar>
-        <q-toolbar-title class="text-weight-bold text-center">
-          <span>Projects</span>
-        </q-toolbar-title>
-
-        <q-separator vertical />
-
-        <q-toolbar-title class="text-weight-bold text-center">
-          <span>Home</span>
-        </q-toolbar-title>
-
-        <q-separator vertical />
-
-        <q-toolbar-title class="text-weight-bold text-center">
-          <span>Invitations</span>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
-
+  <q-layout view="lHr lpR lFr">
     <q-drawer
       show-if-above
       v-model="leftDrawerOpen"
@@ -27,11 +7,15 @@
       bordered
       :width="283"
     >
+      <q-toolbar-title class="text-left q-ml-md">
+        <router-link to="/homepage" class="text-decoration-none bungee-shade">
+          LeBoard
+        </router-link>
+      </q-toolbar-title>
       <!-- <q-icon name="font_download" /> -->
-      <q-title class="bungee-shade q-pa-lg q-my-xl">LeBoard</q-title>
 
-      <q-list class="alice q-mt-lg">
-        <q-item to="/" clickable v-ripple exact>
+      <q-list class="alice q-mt-md">
+        <q-item to="/homepage" clickable v-ripple exact>
           <q-item-section avatar>
             <q-icon name="home" size="md" />
           </q-item-section>
@@ -75,7 +59,13 @@
       </q-list>
     </q-drawer>
 
-    <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
+    <q-drawer
+      show-if-above
+      v-model="rightDrawerOpen"
+      side="right"
+      bordered
+      :width="283"
+    >
       <!-- drawer content -->
       <q-input
         class="alice text-weight-bold q-ma-md"
@@ -161,3 +151,10 @@ export default {
   },
 };
 </script>
+<style lang="sass">
+.header-icon
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+</style>

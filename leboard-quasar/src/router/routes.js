@@ -3,7 +3,11 @@ const routes = [
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/PageHome.vue"), name: "Home" },
+      {
+        path: "",
+        component: () => import("pages/PageHome.vue"),
+        name: "Home",
+      },
       {
         path: "/notifications",
         component: () => import("pages/PageNotifications.vue"),
@@ -28,6 +32,21 @@ const routes = [
         path: "/settings",
         component: () => import("pages/PageSettings.vue"),
         name: "Settings",
+      },
+      {
+        path: "/homepage",
+        component: () => import("pages/HomePage.vue"),
+        name: "HomePage",
+      },
+      {
+        path: "/homeprojects",
+        component: () => import("pages/HomeProjects.vue"),
+        name: "HomeProjects",
+      },
+      {
+        path: "/homeinvitations",
+        component: () => import("pages/HomeInvitations.vue"),
+        name: "HomeInvitations",
       },
     ],
   },
