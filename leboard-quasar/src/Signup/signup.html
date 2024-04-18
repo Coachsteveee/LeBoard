@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-form">
+        <h2>Create an Account</h2>
+        <form id="signUpForm">
+            <div class="input-group">
+                <label for="profilePic">Choose a profile pic</label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Enter Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="input-group">
+                <label>Role</label>
+                <div class="half-width">
+                    <label><input type="checkbox" name="role" value="student"> Student</label>
+                    <label><input type="checkbox" name="role" value="teacher"> Teacher</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Are you currently working on a project?</label>
+                <div class="half-width">
+                    <label><input type="checkbox" name="project" value="yes"> Yes</label>
+                    <label><input type="checkbox" name="project" value="no"> No</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Skills</label>
+                <div class="dropdown">
+                    <select id="skills" name="skills">
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <button type="submit">Finish</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
